@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  This HTML File represents about india-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is a page which shows the description about bharat and its flag. (This description will be shown just below the title of your website when someone searches your website.)">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="indian flag.png" type="image/x-icon">
+    <title>Bharat</title>
+
+    <!-- The style element below is part of inline CSS  -->
+    <style>
+
+        a:hover{
+            color: red;
+            background-color: black;
+        }
+
+        h2{
+            color: red;
+        }
+
+        table {
+            border-collapse: collapse;
+            /* Optional: Combine adjacent table borders into a single border */
+            width: 50%;
+            /* Optional: Make the table fill its container */
+            
+        }
+
+        th,td {
+            border: 3px solid magenta;
+            /* Set border for table cells */
+            padding: 5px;
+            /* Optional: Add padding to cells for better spacing */
+            text-align: left;
+            /* Optional: Align text to the left within cells */
+        }
+    </style>
+</head>
+
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+    <header>
+        <h1 style="color: orange;">BHARAT(Website Title)</h1>
+        <p>This is a header element(from bharat to this list items, before the text indian flag) & below 3 dots are navigation list.</p>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- More navigation items... -->
+            </ul>
+        </nav>
+    </header>
+
+    <hr>  ^ this is horizontal line tag{&lt;hr&gt;}, used to give a horizontal line in the page.
+
+    <h1 style="color: green;">Indian Flag(h1)</h1>
+    <img height="200" width="300" src="indian flag.png" alt="India flag">
+    <br>
+    <button> Click Indian Flag </button>
+
+
+    <h1 style="color:coral;"> ABOUT INDIA(H1) </h1>
+
+    <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        <a href="https://en.wikipedia.org/wiki/India">India</a>, officially the Republic of India (ISO:
+        Bhārat Gaṇarājya),[22] is a country in South Asia.
+        It is the seventh-largest country by area; the most populous country as of June 2023;[23][24] and
+        from the time of its independence in 1947, the world's most populous democracy.[25][26][27] Bounded
+        by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the
+        southeast, it shares land borders with Pakistan to the west;[j] China, Nepal, and Bhutan to the
+        north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is in the vicinity of
+        Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand,
+        Myanmar, and Indonesia.
+    </p>
+
+    <br>
+
+    <h2>Random H2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga?</p>
+
+    <h2>Other Countries(ordered list-H2)</h2>
+    <ol type="i"">
+        <li><a href="https://en.wikipedia.org/wiki/China">China</a></li>
+        <li>USA</li>
+        <li>Russia</li>
+        <li>Japan</li>
+    </ol>
+
+    <h2>Asian Countries(un-ordered list-H2)</h2>
+    <ul type="square">
+        <li>Nepal</li>
+        <li>Afghanistan</li>
+        <li>Bangladesh</li>
+    </ul>
+
+    <h2>Table Of Countries(Table-H2)</h2>
+    <table border="5">
+        <caption">Details of country(caption)</caption>
+            <tr>
+                <th>Country</th>
+                <th>Establish</th>
+                <th>Region</th>
+            </tr>
+
+            <tr style="color: indigo; font: 1em sans-serif;">
+                <td>INDIA</td>
+                <td>1947</td>
+                <td>Asia</td>
+            </tr>
+
+            <tr style="color: indigo; font: 1em sans-serif;">
+                <td>China</td>
+                <td>1985</td>
+                <td>Asia</td>
+            </tr>
+
+            <tr style="color: indigo; font: 1em sans-serif">
+                <td>USA</td>
+                <td>1855</td>
+                <td>America</td>
+            </tr>
+    </table>
+
+    <br>
+
+    <h5>Special Characters of HTML(H5):</h5>
+        <p>
+        <ul>
+            <li>&copy --> this is copyright = & copy <br></li>
+            <li>&reg  --> this is registered = & reg <br></li>
+            <li>&trade --> this is trade = &trade <br></li>
+            <li>&#8364 --> this is euro = & #8364(dec) <br></li>
+            <li>&#8377 --> this is rupee = & #8377(dec) <br></li>
+        </ul>
+        </p>
+
+    <h5>REGISTRATION FORM(H5): </h5>
+    <form style="background-color:rgb(236, 196, 120);">
+        This form is to register yourself as a citizen of India:<br><br>
+
+        <div>
+            <label >Name*:</label>
+            <input type="text" placeholder="Enter your name"  required>
+        </div>
+
+        <div>                
+            <!-- Radio buttons for gender -->
+            <label for="gender">Gender:</label>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <!-- The "name" attribute is used for identifying the control, especially when the data is sent to the server. -->
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="pnts" name="gender" value="none">
+            <label for="pnts">Prefer Not to Say</label>
+        </div>
+
+        <div>
+            <label for="email">E-mail*:</label>
+           <input type="email" id="email" name="E-Mail" placeholder="Enter your Email" required>
+        </div>
+
+        <div>
+            <label for="pw">Password*:</label>
+            <input type="password" id="pw" placeholder="Enter email password" required >
+        </div>
+
+        <div>
+            <label for="anum">Age:</label>
+            <input type="number" id="anum" placeholder="Enter your Age">
+        </div>
+
+        <div>
+            <label for="color">Color:</label>
+            <input type="color" id="color" placeholder="enter your fav color">
+        </div>
+
+        <div>
+            <label for="fruit">Select national fruit:</label>
+            <select name="fruit" id="fruit">
+                <option value="Aam">Mango</option>
+                <option value="Seb">Apple</option>
+                <option value="Kela">Banana</option>
+                <option value="Amrud">Guava</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="adhar">Aadhar*:</label>
+           <input type="number" id="adhar" placeholder="Enter your Aadhar Number" required>
+        </div>
+
+        <div>
+            <label for="bday">Date Of Birth:</label>
+            <input type="date" id="bday" name="birthdate" placeholder="Enter your DOB">
+        </div>
+
+        <div>
+            <label for="valid">Validity of data:</label>
+
+            <input type="checkbox" id="1" name="valid">
+            <label for="1">Valid Data Given</label>
+        </div>
+
+        <div>
+            <label for="co2">Enter your comment here:</label>
+            <br>
+            <textarea name="comment" id="co2" cols="50" rows="5">Type here...</textarea>
+        </div>
+
+        <input type="submit" value="Submit Form">
+    </form>
+
+    <br>
+    Body Part is written here: <br>
+    The national flag of India, colloquially called Tiraṅgā (the tricolour), is a horizontal rectangular tricolour flag,
+    the colours being of India saffron, white and India green; with the Ashoka Chakra, a 24-spoke wheel, in navy blue at
+    its centre.
+    It was adopted in its present form during a meeting of the Constituent Assembly held on 22 July 1947, and it became
+    the official flag of the Union of India on 15 August 1947. The flag was subsequently retained as that of the
+    Republic of India. In India, the term "tricolour" almost always refers to the Indian national flag.
+
+    The philosopher said, <q cite="https://en.wikipedia.org/wiki/India">The unexamined life is not worth living.</q>
+
+    <div>
+        <audio controls>
+            <source src="Jana-Gana-Mana.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+    <!-- <video width="240" height="320" controls>
+        <source src="https://youtube.com/shorts/bMXZ5j3Z3-M?si=x_JocAp5rHeYPzJW" type="video/mp4">
+        Your browser does not support the video tag.
+      </video> -->
+<!-- To link a JAVASCRIPT code inside HTML code:
+<script src="calc.js"></script> -->
+</body>
+<footer>
+    <a href="#">Go to Top of the Page</a>
+
+    <p>&copy; 2024 BHARAT &trade; . All rights reserved.</p>
+    <!-- Additional footer content... -->
+</footer>
+
+</html>

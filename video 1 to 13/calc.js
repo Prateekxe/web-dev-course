@@ -1,0 +1,1 @@
+alert("This is an alert from JS File, Welcome to the website")
