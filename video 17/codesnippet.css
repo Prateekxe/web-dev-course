@@ -1,0 +1,59 @@
+  /* element selector */
+  h2{
+    color:rgb(3, 96, 65);
+}
+
+/* ID selector */
+#h1id{
+    text-decoration: underline;
+}
+
+/* Class selector */
+.h1-class{
+    background-color: rgb(10, 150, 150);
+}
+
+/* pseudo selector */
+/* on hover it will change its bg-color to ... */
+a:hover{
+    background-color: antiquewhite;
+}
+
+/* pseudo selector */
+/* if you visit the link then after it will change its color to .. */
+a:visited{
+    color:mediumvioletred;
+}
+
+/* First Child Pseudo Selector */
+p:first-child{
+    color:rgb(0, 20, 244);
+}
+
+/* child selector */
+div>p{
+    background-color: bisque;
+}
+
+ol>li{
+    font-style: oblique;
+}
+
+ul>li{
+    color:teal;
+}
+
+/* descendant selector */
+div p{
+    color: rgb(8, 118, 17);
+}
+
+/* universal selector */
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* element selector */
+pre{
+    background-color:darkkhaki;
+}

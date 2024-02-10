@@ -1,0 +1,82 @@
+<!-- THIS HTML FILE CONTAINS READ ABOUT HOW TO ADD CODE SNIPPET AND USE SELECTORS IN CSS  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code-snippet & selectors</title>
+     <link rel="icon" href="logo-wayfinder.png" type="image/x-icon">
+    <link rel="stylesheet" href="codesnippet.css">
+</head>
+
+<body>
+    <h1 id="h1id" class="h1-class">Displaying Code Snippets & Using Various Selectors</h1>
+    <h2>C Code Snippets </h2>
+        <p>Code of Sum in C:</p>
+
+        <pre>
+        <code>
+        #include &lt;math.h&gt;
+        #include &lt;stdio.h&gt;
+        
+        int sum();
+        int main()
+        {
+            int num;
+            num = sum();
+            printf("\nSum of two given values = %d", num);
+            return 0;
+        }
+        
+        int sum()
+        {
+            int a = 50, b = 80, sum;
+            sum = sqrt(a) + sqrt(b);
+            return sum;
+        }
+        </code>
+        </pre>
+
+    <div>
+        <p>I am a para inside div element.</p>
+    </div>
+
+    <div>
+        <article>
+            <p>
+                i am a para under path: (div > article > p)
+            </p>
+        </article>
+    </div>
+
+    <span>
+        <p>I am first child</p>
+        <p>I am second child</p>
+    </span>
+        
+    <h3><a href="https://www.google.com/">Go to Google</a></h3>
+
+    <h5>Types of Selectors:</h5>
+        <ol>
+            <li>Element Selector</li>
+            <li>Class Selector</li>
+            <li>ID Selector</li>
+            <li>Child Selector</li>
+            <li>Descendant Selector</li>
+            <li>Universal Selector</li>
+            <li>Pseudo Selector</li>
+        </ol>
+
+        <ul>
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+        </ul>
+
+    <!-- This is a comment -->  
+</body>
+
+</html>
