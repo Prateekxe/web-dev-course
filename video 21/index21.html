@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <link rel="stylesheet" href="index21.css">
+</head>
+
+<body>
+    <h1>CSS Specificity</h1>
+    <p>CSS Specificity helps determine what style will be applied to the HTML element(s) when there are overlapping or
+        multiple CSS rules.
+    
+        It is a value or weight assigned to a CSS selector. The higher the specificity, the more precedence the selector
+        has. <br>
+    
+        Let's consider the following code:</p>
+
+    <pre>
+        <code>
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;style&gt;
+                *{
+                    color: gray;
+                }
+                #title{
+                    color: red;
+                }
+                .h1{
+                    color: blue;
+                }
+                h1{
+                    color: pink;
+                }
+                &lt;/style&gt;
+
+            &lt;/head&gt;
+
+        &lt;body&gt;
+            &lt;h1 id="title" class="h1" style="color:purple"&gt;CodeWithHarry&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </code>
+    </pre>
+
+    <h2>The Cascade Algorithm</h2>
+    <p>CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason that the text of the button styled with the above CSS will be purple. <br>
+
+    Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm has 4 distinct stages.</p>
+
+    <ol>
+        <li><strong>Position and order of appearance:</strong> the order in which your CSS rules appear
+        </li>
+        <li><strong>Specificity:</strong> an algorithm that determines which CSS selector has the strongest match</li>
+        <li><strong>Origin:</strong> the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS</li>
+        <li><strong>Importance:</strong> some CSS rules are weighted more heavily than others, especially with the !important rule type
+            Lets look into all these one by one</li>
+    </ol>
+
+    <h2>Order of Specificity</h2>
+    <p><Strong>!important > Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector</Strong></p>
+
+    <h2>Specificity Calculation</h2>
+    <p>To calculate specificity, assign a value to each part of the selector:</p>
+        <ul>
+            <li>Universal Selector: 0</li>
+            <li>Element selectors and pseudo-elements: 1</li>
+            <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+            <li>ID selectors: 100</li>
+            <li>Inline styles: 1000</li>
+            <li>!important: 10,000</li>
+        </ul>
+
+        <div>
+            <h1 class="yellow cred cpurple" data-x="pks">Sample Text</h1>
+            <p>On this Sample Text, Specificity Example is given in CSS Sheet. <br>Below is the code of h1: </p>
+            <pre>
+                <code>
+    &lt;h1&gt; class="yellow cred cpurple" data-x="pks">Sample Text&lt;/h1&gt;
+                </code>
+            </pre>
+            
+        </div>
+
+</body>
+
+</html>
