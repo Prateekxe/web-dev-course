@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Nunito:wght@300;400&family=Poppins:wght@100;200&display=swap');
+
+        pre code {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Baloo 2', sans-serif;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            /* width will be equal to 80% width of the viewport */
+            height: 5vh;
+            /* height will be equal to 80% height of the viewport */
+            /* vh and vw both are responsive */
+            margin: auto;
+            background-color: aquamarine;
+            font-size: 2em;
+
+            text-overflow: clip;
+            overflow: hidden;
+            /* if text will overflow, it will be hidden */
+            /* add both text overflow and overflow together */
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+
+            /* height: 80vh; */
+            /* sirf height is container ke height ko fix kr dega ki haa is container ka height 80vh hi hona chahiye, 80vh se kam nhi hoga, aur jyada bhi nhi ho skta */
+            /* aur is case me container ke andar scroll hoga  */
+
+            min-height: 80vh;
+            /* min height ke case me is container ki minimum height hmesha 80vh to rhegi hi, isse kam nhi ho skti, lekin isse jyada ho skti h aur kyuki container ki height 80vh se jyada ho skti h mtlb container khud bada ho jayega to andar scroll nhi hoga */
+            
+            margin: 23px auto;
+            background-color: rgb(237, 159, 202);
+            font-size: 18px;
+            /* em means element: 1.4em means font size will be 1.4 times the default or inherited value of font size */
+
+            text-overflow: ellipsis;
+            overflow: scroll;
+            /* overflow is somewhat connected to height  */
+        }
+
+        .container p {
+            font-size: 1.5em;
+            /* here font-size of p(which is in the .conatiner) will be 18px*1.5em = 27px - 18px is inherited from container class*/
+            /* if it would have not inherited from any parent then it would surely have taken Root value or Default value which is 16px in this case.  */
+
+            font-size: 2rem;
+            /* 2rem means, now p will have 2 guna of font size of the root element 
+            which is html here(above) */
+
+            width: 50%;
+            /* % means it will take 50% width of the parent  */
+        }
+
+        .mycont{
+            background-color: brown;
+            color: bisque;
+            border: 2px solid black;
+            box-sizing: border-box;
+            font-size: 18px;
+            /* width: 100vmin; */
+            /* vmin means - it will take whatever is min of viewport of current device, like here it is laptop and in laptop min size is height among width and height, hence 100vmin will take 100% height of viewport as width here.  */
+            width: 80vw;
+            margin: 23px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- this is a navbar -->
+        I am a box class.(navbar)
+    </div>
+
+    <div class="container">
+        I am a container class.(main box/body)
+        <p>
+            I AM A P OF CONTAINER- Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestiae nemo
+            dignissimos, in commodi excepturi nulla sint odit. Maxime tempora distinctio nulla aut!
+        </p>
+        <pre>
+            <code>
+            <strong>Below are the properties of Margin.</strong>
+            /* Apply to all four sides */
+            margin: 1em;
+            margin: -3px;
+
+            /* top and bottom | left and right */
+            margin: 5% auto;
+
+            /* top | left and right | bottom */
+            margin: 1em auto 2em;
+
+            /* top | right | bottom | left */
+            margin: 2px 1em 0 auto;
+
+            /* Global values */
+            margin: inherit;
+            margin: initial;
+            margin: revert;
+            margin: revert-layer;
+            margin: unset;
+
+            </code>
+        </pre>
+    </div>
+
+    <div class="mycont">
+        I am mycont class. Lorem ipsum dolor sit amet consectetur, elit.(footer)
+    </div>
+</body>
+
+</html>
