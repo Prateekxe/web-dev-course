@@ -61,7 +61,10 @@
             /* em means element: 1.4em means font size will be 1.4 times the default or inherited value of font size */
 
             text-overflow: ellipsis;
-            overflow: scroll;
+            /* overflow: scroll; */
+            /* overflow krne pe scroll krega */
+            overflow: auto;
+            /* overflow auto is a better option because, if the text overflows then it will add a scroll-bar else it will not */
             /* overflow is somewhat connected to height  */
         }
 
