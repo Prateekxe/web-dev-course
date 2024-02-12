@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid magenta;
+            /* display: inline; */
+            /* this will change a block element(div) to inline elemnt */
+            margin: 12px;
+            padding: 10px;
+            width: 340px;
+            /* margin, padding & width will not be applied on top for inline elements */
+            /* to resolve this issue - use inline-block */
+            display: inline-block;
+        }
+
+        .nav {
+            border: 3px solid red;
+            background-color: yellow;
+            width: 60vw;
+            margin: 0px auto 15px;
+        }
+
+        .box1 {
+            background-color: antiquewhite;
+            /* display: none; */
+            /* this will vanishes or delete box1 from the page.  */
+            display: flex;
+            justify-content: center;
+            width: 80vw;
+            margin: auto;
+
+        }
+
+        .box2 {
+            background-color: rgb(184, 237, 8);
+            /* visibility: hidden; */
+            /* this will hide the box2 but the space for box2 will be there */
+            box-sizing: border-box;
+            width: 100vw;
+            margin: auto;
+            display: grid;
+            justify-content: right;
+        }
+
+        .pre {
+            border: 2px solid black;
+            margin: auto;
+            width: 80vw;
+            background-color: beige;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        Hi i am navbar.
+    </div>
+    <div class="box box1">
+        I am from box class and - box 1.
+    </div>
+    <div class="box box2">
+        I am from box class and - box2.
+    </div>
+    <span>I am a good</span>
+    <span>boy.</span>
+
+    <div class="pre">
+        <p>this is the link if you want to know more about display properties:</p>
+        <pre><code>
+            https://developer.mozilla.org/en-US/docs/Web/CSS/display
+            <p>And these are some of the properties:</p>
+/* precomposed values */
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+display: inline-flex;
+display: grid;
+display: inline-grid;
+display: flow-root;
+
+/* box generation */
+display: none;
+display: contents;
+
+/* multi-keyword syntax */
+display: block flex;
+display: block flow;
+display: block flow-root;
+display: block grid;
+display: inline flex;
+display: inline flow;
+display: inline flow-root;
+display: inline grid;
+
+/* other values */
+display: table;
+display: table-row; /* all table elements have an equivalent CSS display value */
+display: list-item;
+
+/* Global values */
+display: inherit;
+display: initial;
+display: revert;
+display: revert-layer;
+display: unset;
+
+        </code></pre>
+    </div>
+</body>
+
+</html>
